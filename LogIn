@@ -1,0 +1,38 @@
+import java.awt.Component;
+import java.awt.Panel;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.plaf.PanelUI;
+
+public class LoginGUI {
+
+
+	public static void main(String[] args) {
+
+	JFrame frame = new JFrame();
+	frame.setSize(100,100);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setVisible(true);
+	frame.add(panel);
+	
+	panel.setLayout(null);
+	
+	JLabel label = new JLabel("User");
+	label.setBounds(10, 20, 80, 25);
+	panel.add(label);
+			
+	JPanel panel = new JPanel();
+	
+    JTextField userText = JTextField("User");
+    userText.setBounds(100,20,165,25);
+    panel.add(userText);
+
+    frame.setVisible(true);
+
+
+	}
+
+}
